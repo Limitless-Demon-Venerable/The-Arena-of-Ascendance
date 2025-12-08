@@ -10,7 +10,7 @@ class Character(ABC):
         self.__max_hp = hp
         self.__attack_power = attack_power
 
-    # Read-Only Access
+    # __ Read-Only
     @property
     def name(self):
         return self.__name
