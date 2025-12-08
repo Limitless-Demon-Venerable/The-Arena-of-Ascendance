@@ -1,4 +1,4 @@
-# The-Arena-of-Ascendance (Python OOP Battle Arena) ⚔️
+# ascendance-engine (Python OOP Battle Arena) ⚔️
 
 A text-based turn-based strategy game that simulates a battle between two characters. This project demonstrates core Object-Oriented Programming (OOP) principles in Python, including Inheritance, Encapsulation, and Polymorphism.
 
