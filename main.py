@@ -37,7 +37,7 @@ class Character(ABC):
         
         print(f" > {self.__name} takes {final_damage} damage! (HP: {self.__hp}/{self.__max_hp})")
 
-    # Abstract Method to allow childrens to implement their own attack func
+    # allows childrens to implement their own attack func
     @abstractmethod
     def attack(self, target):
         pass
