@@ -1,10 +1,14 @@
+# TODO
+# - A randomized number after char name diffrentiate between 'warrior vs warrior'
+
+
 import random
 from abc import ABC, abstractmethod
 
 
 class Character(ABC):
     def __init__(self, name, hp, attack_power):
-        # Strict private attributes
+        # private vars
         self.__name = name
         self.__hp = hp
         self.__max_hp = hp
@@ -29,7 +33,6 @@ class Character(ABC):
 
     # reducing hp
     def take_damage(self, amount):
-        # no negative health
         final_damage = max(0, int(amount))
         self.__hp -= final_damage
         if self.__hp < 0:
@@ -37,7 +40,6 @@ class Character(ABC):
         
         print(f" > {self.__name} takes {final_damage} damage! (HP: {self.__hp}/{self.__max_hp})")
 
-    # allows childrens to implement their own attack func
     @abstractmethod
     def attack(self, target):
         pass
